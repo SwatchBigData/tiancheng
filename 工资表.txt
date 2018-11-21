@@ -1,0 +1,24 @@
+create table payroll1( id int auto_increment primary key, wages int, Sex varchar(10), Age int);
+insert into payroll1(id,wages,Sex,Age)
+    -> values(1,"1000","m","22"),
+    -> (2,"1100","m","23"),
+    -> (3,"1111","f","25"),
+    -> (4,"1255","f","26"),
+    -> (5,"700","f","20"),
+    -> (6,"850","m","21"),
+    -> (7,"5000","m","30"),
+    -> (8,"3600","f","29"),
+    -> (9,"2400","m","27"),
+    -> (10,"5200","m","35");
+create table payroll2( id int auto_increment primary key, wages int, Sex varchar(10), Age int);
+insert into payroll2(id,wages,Sex,Age) values(1,"6200","m","29"), (2,"3200","m","23"), (3,"2400","f","25"), (4,"2001","f","26"), (5,"700","f","20"), (6,"6712","m","21"), (7,"5033","m","30"), (8,"2200","f","29"), (9,"2455","m","27"), (10,"1000","m","35");
+select sum(wages) from payroll1;
+select sum(wages) from payroll2;
+select max(wages) from payroll1;
+select max(wages) from payroll2;
+select min(wages) from payroll1;
+select min(wages) from payroll2;
+select * from payroll1 order by wages desc;
+select * from payroll2 order by wages desc;
+select * from payroll1 order by id desc limit 0,5;
+select * from payroll1 order by id desc limit 5,5;
