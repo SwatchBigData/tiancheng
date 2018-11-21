@@ -1,0 +1,9 @@
+create table shoppingcar(
+    -> id int auto_increment primary key,
+    -> favorite varchar(30),
+    -> discount varchar(20),
+    -> wish varchar(40));
+insert into shoppingcar(id,favorite,discount,wish)
+    -> values(1,"one","onee","oneee"),(2,"two","twoo","twooo"),(3,"three","threee","threeee"),(4,"four","fourr","fourrr"),(5,"five","fivee","fiveee");
+update shoppingcar set wish="six" where wish="fiveee";
+delete from shoppingcar where favorite="two";
