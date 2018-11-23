@@ -1,0 +1,10 @@
+create table films( id int auto_increment primary key,filmsname varchar(30), years int, director varchar(30), score int);
+
+insert into films(id,filmsname,years,director,score) values(1,"china","1987","zhang","6"),(2,"japan","1996","tian","7"),(3,"canada","1982","cheng","8"),(4,"usa","1999","dsdssda","9"),(5,"asrili","2008","dsds","5");
+
+select * from films where filmsname like "%chi%";
+
+select * from films where director like "%ti%";
+
+select * from films where years="2008";
+
